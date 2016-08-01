@@ -18,6 +18,7 @@ type CraftData struct {
 	Costs         *Costs
 	Description   string
 	Hint          string
+	MasterRecipe  string
 	// ScanRequirements
 	// ResearchRequirements
 }

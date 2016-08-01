@@ -15,6 +15,10 @@ func NewRecipes(craftDatums []*CraftData) Recipes {
 	recipes := make(Recipes, len(craftDatums))
 
 	for _, craftData := range craftDatums {
+		if craftData.MasterRecipe != "" {
+			continue
+		}
+
 		costs := make([]*CraftCost, 0)
 
 		for _, cost := range craftData.Costs.CraftCost {

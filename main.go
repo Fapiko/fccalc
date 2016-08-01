@@ -15,9 +15,18 @@ func main() {
 	recipes := fcrecipes.NewRecipes(fcrecipes.LoadAllRecipes(fcdata).CraftData)
 
 	itemName := os.Args[1]
-	numItems, err := strconv.Atoi(os.Args[2])
-	if err != nil {
-		panic(err)
+
+	var numItems int
+
+	if len(os.Args) == 2 {
+		numItems = 1
+	} else {
+		var err error
+
+		numItems, err = strconv.Atoi(os.Args[2])
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	fmt.Println(itemName)
