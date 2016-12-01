@@ -7,8 +7,8 @@ import (
 
 	"io/ioutil"
 
-	"github.com/Fapiko/fccalc/fcrecipes"
 	log "github.com/Sirupsen/logrus"
+	"github.com/fapiko/fccalc/fcrecipes"
 )
 
 const fcdata = "/media/steam/SteamLibrary/steamapps/common/FortressCraft/Default/Data"

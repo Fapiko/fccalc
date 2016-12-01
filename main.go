@@ -6,7 +6,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/Fapiko/fccalc/fcrecipes"
+	"github.com/fapiko/fccalc/fcrecipes"
 )
 
 const fcdata = "/media/steam/SteamLibrary/steamapps/common/FortressCraft/Default/Data"
